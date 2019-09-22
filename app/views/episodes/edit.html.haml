@@ -1,0 +1,10 @@
+- content_for :title do
+  Edit
+  = @episode.name
+
+.row
+  .col-sm-12
+    %h2
+      Edit
+      = @episode.name
+    = render 'form'

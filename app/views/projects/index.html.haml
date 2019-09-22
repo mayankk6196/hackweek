@@ -1,0 +1,68 @@
+= render :partial => "projects/index"
+- content_for :script do
+  :javascript
+    function projectPageCall(){
+      $( "#ideas" ).click(function() {
+        console.log ("show only ideas");
+        $( ".invention" ).hide();
+        $( ".record" ).hide();
+        $( ".project" ).hide();
+        $( ".idea" ).show();
+        $( "#ideas-pill").addClass( "active" );
+        $( "#all-pill, #projects-pill").removeClass( "active" );
+      });
+      $( "#projects" ).click(function() {
+        console.log ("show only projects");
+        $( ".invention" ).hide();
+        $( ".record" ).hide();
+        $( ".idea" ).hide();
+        $( ".project" ).show();
+        $( "#projects-pill").addClass( "active" );
+        $( "#all-pill, #ideas-pill").removeClass( "active" );
+      });
+      $( "#all" ).click(function() {
+        console.log ("show everything");
+        $( ".invention" ).show();
+        $( ".record" ).show();
+        $( ".idea" ).show();
+        $( ".project" ).show();
+        $( "#all-pill").addClass( "active" );
+        $( "#projects-pill, #ideas-pill").removeClass( "active" );
+      });
+      $("table").addTableFilter({
+      });
+
+      Mousetrap.bind('j', function() { ProjectNext(); });
+      Mousetrap.bind('k', function() { ProjectPrevious(); });
+
+      function ProjectPrevious() {  
+          hash = window.location.hash
+          all = $("h4[id^='project-']").length
+          if (hash == "")
+            window.location.hash = "#project-0";
+          else
+            var blah = hash.split('-')
+          next = parseInt(blah[1])
+          if(next > 0)
+            next--
+          else
+            next = all - 1
+          window.location.hash = "#project-" + next;
+        }
+
+      function ProjectNext() {  
+        hash = window.location.hash
+        all = $("h4[id^='project-']").length
+        if (hash == "")
+          window.location.hash = "#project-0";
+        else
+          var blah = hash.split('-')
+        next = parseInt(blah[1])
+        if(next == (all - 1))
+          next = 0
+        else
+          next++
+        window.location.hash = "#project-" + next;
+      }
+    }
+    projectPageCall();

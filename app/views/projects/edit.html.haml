@@ -1,0 +1,10 @@
+- content_for :title do
+  Edit
+  = @project.title
+
+.row
+  .col-sm-12.project
+    %h2
+      Edit project
+      = @project.title
+    = render 'form'

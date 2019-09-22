@@ -1,0 +1,31 @@
+<%
+  if ENV['TRAVIS']
+    password = ''
+  elsif ENV['CONTAINER']
+    password = 'opensuse'
+    host = 'db'
+  else
+    password = "hackweek"
+  end
+%>
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: <%= password %>
+  host: <%= host %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: hackweek_development
+
+test:
+  <<: *default
+  database: hackweek_test
+
+production:
+  <<: *default
+  database: hackweek_production

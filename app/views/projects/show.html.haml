@@ -1,0 +1,102 @@
+- content_for :title do
+  = @project.title
+
+.row{style: 'padding-bottom: 20px;'}
+  .col-md-6
+    - if @previous_project
+      = button_to 'Previous', project_path(@episode, @previous_project), :id => "previous_link", :method => :get, :class => "btn btn-default btn-xs pull-left", :title=> "Try pressing 'j' on your keyboard.."
+  .col-md-6
+    - if @next_project
+      = button_to 'Next', project_path(@episode, @next_project), :id => "next_link", :method => :get, :class => "btn btn-default btn-xs pull-right", :title => "Try pressing 'k' on your keyboard.."
+.row
+  .col-md-12
+    .page-header.media
+      .pull-left
+        .img-wrapper
+          = image_tag @project.avatar.url(:thumb), width: '32'
+          = @project.title
+          %br
+          %small
+            = render :partial => "projects/state_name", :locals => {:project =>  @project }
+            by
+            = link_to user_path(@project.originator) do
+              = @project.originator.name
+            = render :partial => "projects/like_button", :locals => {:project =>  @project }
+        %span
+          #project_info.small
+            = render :partial => "projects/info", :locals => {:project => @project }
+
+.row
+  .col-sm-8.project-style
+    :markdown
+      #{ emojify @project.description }
+  .col-sm-4
+    .row
+      .col-sm-12
+        .text-right
+          #file_buttons
+            = render :partial => "file_buttons"
+      .col-sm-12
+        %h4
+          - if @project.users.empty?
+            No Hackers:
+        .well.well-sm#hackers
+          = render partial: 'hackers'
+        - unless @project.aasm_state == "invention"
+          %p#membership_buttons.pull-right
+            = render partial: 'membership_buttons'
+          .clearfix
+    .row
+      .col-sm-12
+        %h4
+          Looking for mad skills in:
+        %p
+          - if @project.keywords.empty?
+            Nothing? Add some keywords!
+          - else
+            = render :partial => "keywords/show", :locals => {:keywords =>  @project.keywords }
+          -if  @project.originator == current_user or @project.users.include? current_user
+            = render :partial => "keywords/new", :locals => {:what => @project }
+    .row
+      .col-sm-12
+        %h4
+          This project is part of:
+        %p#episode_list
+          = render partial: 'episode_list'
+        #episode_buttons
+          = render partial: 'episode_buttons'
+        .clearfix
+    .row
+      .col-sm-12
+        %h4
+          Activity
+        #activity
+          = render partial: 'activity'
+%br
+.row
+  .col-sm-8#comments_section
+    %h4 Comments
+    - if @project.comments.present?
+      %ul.media-list
+        = render :partial => 'comments/comment', :collection => @project.comments
+    - else
+      %p Be the first to comment!
+  .col-sm-4
+    .col-sm-11#similar_projects
+      %h4 Similar Projects
+      - if @similar_projects_keys.present?
+        = render partial: 'similar_projects'
+      - else
+        %p This project is one of its kind!
+  .col-sm-12#comments_form_section
+    %p
+      - if current_user
+        = render partial: 'comments/form', locals: { comment: @new_comment, parent: @project, id: rand(36**10).to_s(36).upcase[0,5] }
+
+= render partial: 'comments/reply_modal'
+
+- content_for :script do
+  :javascript
+    Mousetrap.bind('j', function() { $('#previous_link').click(); });
+    Mousetrap.bind('k', function() { $('#next_link').click(); })
+    $('textarea').atwho({at:"@", 'data':#{raw @username_array}});

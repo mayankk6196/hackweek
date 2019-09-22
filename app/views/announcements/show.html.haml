@@ -1,0 +1,8 @@
+- content_for :title do
+  = @announcement.title
+
+.row
+  .col-sm-12
+    %h2
+      = @announcement.title
+    = simple_format(@announcement.text)

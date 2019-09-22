@@ -1,0 +1,49 @@
+.row
+  .col-md-12
+    .page-header
+      - if @episode
+        %h1
+          = @episode.name
+          %small
+            = "#{@episode.start_date.strftime("%A %d %B")} - #{@episode.end_date.strftime("%A %d %B %Y")}"
+      - else
+        %div
+          = image_tag 'hackweek-label.png', class: 'img-responsive', alt: 'Hack Week'
+.row
+  .col-md-7
+    - if @episode.try(:description).blank?
+      %p.lead
+        Hack Week is the time SUSE engineers experiment, innovate &amp; learn interruption-free
+        for a whole week! Across teams or alone, but always without limits.
+      %p.lead
+        A SUSE tradition since 2007, Hack Week has brought together hundreds of hackers around
+        the globe to collaborate on open source. Learn more
+        = link_to about_path do
+          about Hack Week.
+      %p.lead
+        What are you going to hack on?
+    - else
+      :markdown
+        #{ @episode.description }
+  .col-md-5
+    %div
+      .h3
+        Welcome from Ralf Flaxa
+        %small President of Engineering at SUSE
+      .embed-responsive.embed-responsive-16by9#intro
+        %video{width: 320, height: 240, controls: true}
+          %source{src: "#{video_path('Hackweek_Welcome_by_Ralf.mp4')}", type: 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'}
+          %source{src: "#{video_path('Hackweek_Welcome_by_Ralf.webm')}", type: 'video/webm; codecs="vp8,vorbis"'}
+
+.row
+  .col-md-8.col-md-offset-2
+    %p
+      .btn-group.btn-group-justified.btn-group-lg
+        = link_to new_project_path, class: 'btn btn-lg btn-info' do
+          Start
+          %span.hidden-xs
+            a Project
+        = link_to projects_path(@episode), class: 'btn btn-lg btn-success' do
+          Join
+          %span.hidden-xs
+            a Project
