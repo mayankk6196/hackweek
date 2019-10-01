@@ -1,4 +1,4 @@
-====== Use Facebook as the identity source for OpenSUSE ======
+====== Use Facebook as the identity source for openSUSE ======
 
 /* If this is your first time using the Idea Pool, please take a second to read the  comment at the end of this template, which explains how to use tags.  
 
@@ -15,7 +15,7 @@ Separate tags with a space like this:
 
 ===== Description =====
 /* Describe your idea here. */
-In my opinion, creating a new user identity to become a registered user on OpenSUSE is a barrier.  Besides the fact I'm tired of maintaining what seems like a bazillion internet identities.  Facebook is fast becoming the largest social network site on the Internet and best of all they support an open application development platform.  It would be relatively easy for OpenSUSE to leverage identities from Facebook rather than maintaining it's own identity store. With over 40 million current users and growing at 3% a month many new potential OpenSUSE community members will already have a Facebook identity which will aid in quickly provisioning the user.
+In my opinion, creating a new user identity to become a registered user on openSUSE is a barrier.  Besides the fact I'm tired of maintaining what seems like a bazillion internet identities.  Facebook is fast becoming the largest social network site on the Internet and best of all they support an open application development platform.  It would be relatively easy for openSUSE to leverage identities from Facebook rather than maintaining it's own identity store. With over 40 million current users and growing at 3% a month many new potential openSUSE community members will already have a Facebook identity which will aid in quickly provisioning the user.
 
 ===== People =====
 /* This section is for listing all of the people involved in this idea or project:

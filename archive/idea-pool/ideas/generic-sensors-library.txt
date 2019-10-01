@@ -38,7 +38,7 @@ There is a separate branch upstream for this project:
 
 http://www.lm-sensors.org/browser/lm-sensors/branches/lm-sensors-3.0.0
 
-I plan to build openSuse 10.2 packages on Friday (June 29th) with whatever I will have come up with. Testers will be welcome.
+I plan to build openSUSE 10.2 packages on Friday (June 29th) with whatever I will have come up with. Testers will be welcome.
 
 ===== Side Quests =====
 

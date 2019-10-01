@@ -15,7 +15,7 @@ Separate tags with a space like this:
 
 ===== Description =====
 /* Describe your idea here. */
-So, my idea is that OpenSuSE should have a centralized app for storing all contacts manageable. IM contacts, Evolution contacts, friends from social networks. All apps around GNOME (naturally, there should be two versions - for GNOME and KDE, for better integration) that have an address book or contact list should be integrated with this app and automatically feed registries into it. So, for each person in this app I could have his e-mail, his IM account, his mobile phone, his Skype nick (or his SIP account), his account on Facebook/MySpace/Twitter/Jaiku/Blogspot/whatsoever. And, possibly, I should get updates from him, like I would in Friendfeed or Social Thing. So, a desktop app, to keep all communication tasks in one place. Deeply integrated into the DE.
+So, my idea is that openSUSE should have a centralized app for storing all contacts manageable. IM contacts, Evolution contacts, friends from social networks. All apps around GNOME (naturally, there should be two versions - for GNOME and KDE, for better integration) that have an address book or contact list should be integrated with this app and automatically feed registries into it. So, for each person in this app I could have his e-mail, his IM account, his mobile phone, his Skype nick (or his SIP account), his account on Facebook/MySpace/Twitter/Jaiku/Blogspot/whatsoever. And, possibly, I should get updates from him, like I would in Friendfeed or Social Thing. So, a desktop app, to keep all communication tasks in one place. Deeply integrated into the DE.
 ===== People =====
 /* This section is for listing all of the people involved in this idea or project:
   - The originator(s) of the idea

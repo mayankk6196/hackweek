@@ -14,7 +14,7 @@ Separate tags with a space like this:
 {{tag>Idea Desktop Installation Management partitioning opensuse}}
 
 ===== Description =====
-Make possible the installation or remove of OpenSUSE directly from windows Desktop... something like Wubi (wubi-installer.org)
+Make possible the installation or remove of openSUSE directly from windows Desktop... something like Wubi (wubi-installer.org)
 
 ===== People =====
 /* This section is for listing all of the people involved in this idea or project:

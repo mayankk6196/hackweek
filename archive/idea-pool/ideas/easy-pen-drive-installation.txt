@@ -14,7 +14,7 @@ Separate tags with a space like this:
 {{tag>Idea Installation Desktop opensuse}}
 
 ===== Description =====
-The idea is to be able to easily install OpenSUSE on a PenDrive, from a Linux with GUI as well as from a Windows Desktop. This would be good to experts as well as for newbies and specially for young people, to who the idea of having their computer on the pocket and being able to boot it anywhere, is a very attractive one.
+The idea is to be able to easily install openSUSE on a PenDrive, from a Linux with GUI as well as from a Windows Desktop. This would be good to experts as well as for newbies and specially for young people, to who the idea of having their computer on the pocket and being able to boot it anywhere, is a very attractive one.
 
 "Portable SUSE" was reported not to be working... however i never tried it myself!
 

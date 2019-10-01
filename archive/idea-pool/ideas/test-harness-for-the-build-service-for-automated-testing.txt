@@ -59,7 +59,7 @@ Try this patch (http://people.freedesktop.org/~nagappan/obs-test-harness-new.pat
   * If test-harness.sh is not available in the current project, still it goes till the invocation of test-harness.sh file.
   * All required projects for testing should be either linked or should be built in the same project.
   * Need to give all the packages required for testing in BuildRequires.
-  * Tested in OpenSuSE-10.2 and that too in chroot environment. Need to check them with other distributions and in Xen environment.
+  * Tested in openSSE-10.2 and that too in chroot environment. Need to check them with other distributions and in Xen environment.
 
 ==== Future ideas ====
 

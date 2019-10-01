@@ -21,9 +21,9 @@ Giver is a simple file sharing desktop application.  People that have machines n
 Giver now integrates with the new HackWeek release of Tomboy.  Notes can now be dragged and dropped to the same people and if they accept the note, a new note will popup in Tomboy... ROCKIN!
 
 
-Giver is now on the OpenSUSE Build service [[http://build.opensuse.org/package/show?package=giver&project=home%3Acgaisford|here]]
+Giver is now on the openSUSE Build service [[http://build.opensuse.org/package/show?package=giver&project=home%3Acgaisford|here]]
 
-If you want to just install it on your OpenSUSE 10.3 [[http://software.opensuse.org/download/home:/cgaisford/openSUSE_Factory|here]] is the repository.
+If you want to just install it on your openSUSE 10.3 [[http://software.opensuse.org/download/home:/cgaisford/openSUSE_Factory|here]] is the repository.
 
 ===== People =====
 /* People working on this, interested people, knowledgeable people.  Also put your HelpWanted requests in here. */
