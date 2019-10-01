@@ -17,7 +17,7 @@ Separate tags with a space like this:
 ===== Description =====
 /* Describe your idea here. */
 
-Spring is an amazing open-source RTS (real time strategy) engine. It would be a great idea to package spring with openSuse (including a few mods and springlobby) to attract casual gamers to openSuse. In my opinion spring might become _the_ open RTS community in the future, it's be nice if openSuse could push it. Generally, I think linux would do much better on the Desktop, if it provided a solid gaming platform. Maybe Novel, RedHat and Canonical should get together and convince Valve, EA and the rest of them to start working on a common platform.
+Spring is an amazing open-source RTS (real time strategy) engine. It would be a great idea to package spring with openSUSE (including a few mods and springlobby) to attract casual gamers to openSUSE. In my opinion spring might become _the_ open RTS community in the future, it's be nice if openSUSE could push it. Generally, I think linux would do much better on the Desktop, if it provided a solid gaming platform. Maybe Novel, RedHat and Canonical should get together and convince Valve, EA and the rest of them to start working on a common platform.
 
 
 ===== People =====

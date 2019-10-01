@@ -15,7 +15,7 @@ Separate tags with a space like this:
 
 ===== Description =====
 /* Describe your idea here. */
-To put this very simple: the OpenSuSE version of the CNR plugin, but working with the OpenSuSE software portal!
+To put this very simple: the openSUSE version of the CNR plugin, but working with the openSUSE software portal!
 
 The idea is to create a CNR-like Plugin where people could simply choose what they want to Install. But specially (since "1 click install" is already available) what they want to Uninstall or Update/Upgrade without having to know anything about libraries, repos, dependencies or anything else.
 

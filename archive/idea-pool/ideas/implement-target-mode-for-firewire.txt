@@ -15,7 +15,7 @@ Separate tags with a space like this:
 
 ===== Description =====
 /* Describe your idea here. */
-With 10.3 we've added the tgt generic target framework to OpenSUSE. This currently provides support for iSCSI and ibmvscsi. As this is quite limited it would be great to enhance this with other backends.
+With 10.3 we've added the tgt generic target framework to openSUSE. This currently provides support for iSCSI and ibmvscsi. As this is quite limited it would be great to enhance this with other backends.
 
   * FC Target Mode: There already is a FC Target mode driver for the QLogic HBAs, originally done for the scst project. So it should be doable to port them to the tgt framework.
   * Firewire Target: There is a stand-alone tool from Oracle, called 'endpoint'. This should be ported to the tgt framework

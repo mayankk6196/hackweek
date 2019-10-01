@@ -1,4 +1,4 @@
-====== MonoDevelop integrate with OpenSUSE Build System ======
+====== MonoDevelop integrate with openSUSE Build System ======
 /*
 Topic tags: Community, Kernel, Desktop, Virtualization, Web20, Mobile, Management, Network, UnixFeature, Server, LowPower, LAMP, Graphics, DevTool, IdeaPool
 Product tags: openSUSE, SLES, SLED, SLERT, SLEPOS, SLETC
@@ -10,7 +10,7 @@ Status: Idea, InProgress, TryMe, InBuildService, Done, Shipped
 
 ===== Description =====
 
-Add support to MonoDevelop's Deploy Framework to create packages using the OpenSUSE build service to encourage other users to start making their packages available through the OBS. 
+Add support to MonoDevelop's Deploy Framework to create packages using the openSUSE build service to encourage other users to start making their packages available through the OBS. 
 
 
 ===== People =====

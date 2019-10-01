@@ -16,7 +16,7 @@ Separate tags with a space like this:
 ===== Description =====
 /* Describe your idea here. */
 
-Internet availability and bandwidth is constantly increasing. Opensuse 10.3 wants to take advantage of that and make online repositories and packages available early during installation.
+Internet availability and bandwidth is constantly increasing. openSUSE 10.3 wants to take advantage of that and make online repositories and packages available early during installation.
 
 Pushing this a bit further could also make translations, help, patches, etc. available early in the installation workflow.
 

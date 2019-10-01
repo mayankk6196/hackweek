@@ -1,4 +1,4 @@
-====== Run OpenSuse Live CD from within a running Windows environment ======
+====== Run openSUSE Live CD from within a running Windows environment ======
 
 /* If this is your first time using the Idea Pool, please take a second to read the  comment at the end of this template, which explains how to use tags.  
 
@@ -14,7 +14,7 @@ Separate tags with a space like this:
 {{tag>Idea Desktop opensuse}}
 
 ===== Description =====
-The name says it all: Run OpenSuse Live CD from within a running Windows environment or at least have an option to restart computer automatically booting from the cd. Newbies don't know how to set their PC to boot from cd
+The name says it all: Run openSUSE Live CD from within a running Windows environment or at least have an option to restart computer automatically booting from the cd. Newbies don't know how to set their PC to boot from cd
 
 ===== People =====
 /* This section is for listing all of the people involved in this idea or project:
